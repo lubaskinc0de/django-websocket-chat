@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Chat Rooms</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="form">
+        <div class="form__title-wrapper">
+            <h1 class="form__title">Connect to room</h1>
+        </div>
+        <div class="form__input-wrapper">
+            <input id="room-name-input" class="form__input" type="text">
+        </div>
+        <div class="form__btn-wrapper">
+            <input id="room-name-submit" type="button" class="form__btn" value="Enter">
+        </div>
+    </div>
+    <script>
+        document.querySelector('#room-name-submit').onclick = function (e) {
+            var roomName = document.querySelector('#room-name-input').value; // достаем имя комнаты которое написал пользователь
+            window.location.pathname = '/' + roomName + '/'; // и выстраиваем url для доступа к комнате
+        };
+    </script>
+</body>
+
+</html>

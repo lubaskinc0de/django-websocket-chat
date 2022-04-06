@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe5b4;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #333;
+    border-radius: 20px;
+    width: 300px;
+    background-color: #fff;
+    padding: 32px;
+}
+
+
+.form__title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: 1px; /* расстояние между буквами */
+    font-weight: 700;
+    color: #2c2c2c;
+}
+
+.form__input {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 1px 1px;
+    letter-spacing: 1px;
+    padding: 2px 7px;
+}
+
+.form__input:focus {
+    border: 1px solid rgb(7, 182, 252);
+    outline: 0;
+}
+
+.form__btn {
+    display: inline-block;
+    background: none;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 15px;
+    min-width: 120px;
+    padding: 5px;
+}
+
+.form__btn:hover {
+    background-color: #000;
+    color: #fff;
+    border-color:#fff;
+    transition: background-color .2s linear, color .2s linear,border-color .2s linear;
+}
+
+.room-chat {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.room-chat__log {
+    margin-bottom: 10px;
+    resize: none;
+    background-color: #000;
+    color: #2dbb09;
+    font-family: sans-serif;
+    width: 100%;
+    border-radius: 10px;
+    padding: 4px 10px;
+}
+
+.room-chat__input {
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 1px 1px;
+    letter-spacing: 1px;
+    padding: 2px 7px;
+}
+
+.room-chat__btn {
+    display: inline-block;
+    background: none;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 15px;
+    min-width: 120px;
+    padding: 5px;
+}
+
+.room-chat__btn:hover {
+    background-color: #000;
+    color: #fff;
+    border-color:#fff;
+    transition: background-color .2s linear, color .2s linear,border-color .2s linear;
+}
+
+.room-chat__input:focus {
+    border: 1px solid rgb(7, 182, 252);
+    outline: 0;
+}
